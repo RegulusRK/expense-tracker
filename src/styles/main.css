@@ -1,4 +1,38 @@
 /* main.css */
+/* Dark Theme */
+.dark-theme {
+    --primary: #8e44ad;
+    --primary-dark: #732d91;
+    --positive: #2ecc71;
+    --negative: #e74c3c;
+    --light-bg: #1e1e2f;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    
+    background: #121212;
+    color: #eee;
+  }
+  
+  .dark-theme body {
+    background: linear-gradient(to right, #232526, #414345);
+    color: #eee;
+  }
+  .dark-theme .container {
+    background: #1c1c2e;
+    color: #eee;
+  }
+  .dark-theme .list li {
+    background: #2a2a3d;
+  }
+  .dark-theme .form-control input {
+    background: #333;
+    color: #eee;
+    border-color: #555;
+  }
+  .dark-theme .form-control input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(142, 68, 173, 0.2);
+  }
+
 
 :root {
     --primary: #9c88ff;
@@ -21,6 +55,7 @@
     font-family: 'Inter', sans-serif;
     color: #333;
     min-height: 100vh;
+    padding: 50px;
   }
   
   .container {
@@ -153,6 +188,16 @@
     border-color: var(--negative);
   }
   
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(100px); }
+  }
+  
+  .list li.removing {
+    animation: fadeOut 0.4s forwards;
+  }
+
+
   .delete-btn {
     background: transparent;
     color: var(--negative);
@@ -204,5 +249,38 @@
     .list li span, .delete-btn {
       margin-top: 8px;
     }
+}
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    background: var(--primary);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
   }
   
+  .theme-toggle:hover {
+    background: var(--primary-dark);
+    transform: rotate(20deg) scale(1.1);
+  }
+
+  @media (max-width: 600px) {
+    .theme-toggle {
+      top: 15px;
+      right: 15px;
+      width: 38px;
+      height: 38px;
+      font-size: 1rem;
+    }
+  }
