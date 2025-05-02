@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# 💸 Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive and animated React application to track your income and expenses. Built with clean CSS (no frameworks like Tailwind), featuring a dark theme toggle, smooth transitions, and intuitive UI.
 
-## Available Script
+## 🚀 Live Demo
+👉 [View on GitHub Pages](https://regulusrk.github.io/expense-tracker)  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📷 Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![screenshot](./src/assets/images/expense-tracker-light-screen.png) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 💰 Add and remove income or expense transactions
+- 📊 Real-time balance calculation
+- 🌗 Dark mode toggle (sun/moon icon)
+- 💅 Modern CSS styling with:
+  - Animations on add/delete
+  - Animated "X" delete button
+  - Smooth number transition in the balance
+- 📱 Fully responsive layout
+- 🎨 Clean, professional, accessible design
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧱 Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node**
+- **JavaScript**
+- **React**
+- **CSS (vanilla)** – no Tailwind, no Bootstrap
+- **React Context API** – for global state
+- **GitHub Pages** – for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🗂️ Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+src/
+├── components/
+│ ├── Header.js
+│ ├── Balance.js
+│ ├── IncomeExpenses.js
+│ ├── TransactionList.js
+│ ├── Transactions.js
+│ └── AddTransaction.js
+├── context/
+│ ├── GlobalState.js
+│ └── AppReducer.js
+├── styles/
+│ └── main.css
+├── App.js
+└── index.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ How to Run Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/your-username/expense-tracker.git
+cd expense-tracker
+npm install
+npm start
 
-## Learn More
+🌙 Dark Mode
+Toggle between light and dark themes using the fixed circle button (🌙 / ☀️) in the top right corner.
+Automatically saves preference using localStorage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📄 License
+This project is open-source and available under the MIT License.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🙌 Credits
+Built by Rafael with ☕
